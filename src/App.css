@@ -21,3 +21,20 @@ object-fit: cover}
 padding: 30px;
 border: 4px solid rgb(18, 1, 17);
 text-align: center;}
+
+.cart-image{
+height: 50px;
+padding-top: 10px;
+}
+
+.cart{
+    padding-left: 20px;
+    border: solid;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+
+.remove-btn{
+    margin-bottom: 10px;
+}

@@ -47,16 +47,18 @@ setCart(cart.filter((item) => item.id !== id))}
 
   return (
     <div>
-      <Navbar cartCount={cart.length} openCart={() => setIsCartOpen(true)} />
-      <ProductList products={products} addToCart={addToCart} />
-
       {/* cart modal */}
       {isCartOpen && (
         <CartModal
           cart={cart}
           cartModal={() => setIsCartOpen(false)}
           removeFromCart={removeFromCart} />
-      )}</div>)}
+      )}
+      
+      <Navbar cartCount={cart.length} openCart={() => setIsCartOpen(true)} />
+      <ProductList products={products} addToCart={addToCart} />
+
+      </div>)}
 
 
 

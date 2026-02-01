@@ -10,11 +10,11 @@ function CartModal({cart, cartModal, removeFromCart}) {
           
 
             {cart.map((item) => (
-                <div>
-                    <img src={item.image} alt={item.title || ""} />
+                <div className="cart">
+                    <img src={item.image} alt={item.title || ""} className="cart-image" />
                     <p>{item.title}</p>
                     <p>{item.price}</p>
-                    <button onClick={() => removeFromCart(item.id)}>
+                    <button onClick={() => removeFromCart(item.id)} className="remove-btn">
                         Remove
                     </button>
                 </div>
